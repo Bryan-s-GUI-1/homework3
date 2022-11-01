@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Poppins Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <form onsubmit="generateTable()">
+        <h1>Multiplication Table</h1>
+        <div class="form-inputs">
+            <div class="input">
+                <label>Minimum Column Value</label>
+                <input type="text" name="name" id="min-col" required>
+            </div>
+            <div class="input">
+                <label>Maximum Column Value</label>
+                <input type="text" id="max-col" required>
+            </div>
+            <div class="input">
+                <label>Minimum Row Value</label>
+                <input type="text" id="min-row" required>
+            </div>
+            <div class="input">
+                <label>Maximum Row Value</label>
+                <input type="text" id="max-row" required>
+            </div>
+        </div>
+        <input type="submit" value="Submit" id="submit">
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
