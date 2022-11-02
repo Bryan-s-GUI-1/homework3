@@ -42,14 +42,22 @@ form {
 }
 
 /* Table */
+#table-container {
+    margin: auto;
+    height: 500px;
+    overflow: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 50%;
+}
+
 table {
     border-collapse: collapse;
     margin: auto;
-    width: 50%;
+    width: 100%;
     border: 3px solid green;
     padding: 10px auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    height: 100%;
 }
 
 td {
@@ -66,5 +74,9 @@ td {
 @media screen and (max-width: 500px) {
     form {
         width: 80%;
+    }
+
+    #table-container {
+        width: 90%;
     }
 }

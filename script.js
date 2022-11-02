@@ -95,8 +95,9 @@ function generateTable() {
         // Add the row to the HTML
         table.appendChild(row);
     }
-    // Adds table to HTML
-    document.body.appendChild(table);
+    // Adds table to table-container div which houses scroll properties
+    const container = document.getElementById("table-container");
+    container.appendChild(table);
     // Prevents reload on submit
     event.preventDefault();
 }
